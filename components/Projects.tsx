@@ -28,6 +28,9 @@ function Projects({projects}: Props) {
                     ))}
               </div>
                     <p className='text-lg text-center md:text-left p-20 md:p-0'>{project?.summary}</p>
+                  <div className='w-full flex items-center justify-center p-7'>
+                    <a href={project?.linkToBuild}><button className='bg-[#F7AB0A] px-10 py-4 rounded-md text-lg text-black font-bold'>Visit</button></a>
+                    </div>
                 </div>
             </div>
            ))}
